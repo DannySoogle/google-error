@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Google Reviews</title>
+    <!-- Подключаем шрифт Roboto, стандартный для Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Базовые стили страницы (Google Material 3) */
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: #f0f4f9; /* Светло-серый фон, типичный для новых сервисов Google */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 16px;
+        }
+
+        /* Контейнер модального окна */
+        .google-modal {
+            background: #ffffff;
+            border-radius: 28px; /* Сильное скругление в стиле Material You */
+            padding: 32px 24px 24px;
+            width: 100%;
+            max-width: 360px; /* Ограничение ширины для имитации мобильного устройства на ПК */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            box-sizing: border-box;
+        }
+
+        /* Логотип Google */
+        .google-logo {
+            width: 74px;
+            height: auto;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Основной текст */
+        .google-text {
+            color: #1f1f1f;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 0 24px 0;
+        }
+
+        /* Ссылка внутри текста */
+        .google-link {
+            color: #0b57d0; /* Фирменный синий цвет ссылок Google */
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .google-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Контейнер для кнопки (выравнивание вправо) */
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 12px;
+        }
+
+        /* Кнопка "Вернуться" */
+        .google-btn {
+            background-color: #0b57d0;
+            color: #ffffff;
+            padding: 10px 24px;
+            border-radius: 9999px; /* Форма пилюли */
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: background-color 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .google-btn:hover {
+            background-color: #0842a0;
+        }
+
+        .google-btn:active {
+            background-color: #062e6f;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="google-modal">
+        <!-- Официальный логотип Google -->
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google" class="google-logo">
+        
+        <!-- Текст на английском языке -->
+        <p class="google-text">
+            We highly value your opinion and want to make the feedback process as convenient and fast as possible.
+            <br><br>
+            Unfortunately, some features may not work correctly on a mobile phone.
+            <br><br>
+            Please leave your review using your computer — it will only take a minute.
+            <br><br>
+            <a href="https://support.google.com/business/topic/4596755" class="google-link" target="_blank">Learn more about Google reviews</a>.
+        </p>
+
+        <!-- Кнопка в правом нижнем углу -->
+        <div class="button-container">
+            <a href="https://google.com" class="google-btn">Go back</a>
+        </div>
+    </div>
+
+</body>
+</html>
